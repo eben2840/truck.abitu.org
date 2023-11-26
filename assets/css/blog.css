@@ -167,7 +167,7 @@ section {
 --------------------------------------------------------------*/
 .header {
   --background-color: #ffffff;
-  color: var(--default-color);
+  color: blue;
   background-color: var(--background-color);
   padding: 15px 20px 15px 20px;
   transition: all 0.5s;
@@ -183,7 +183,7 @@ section {
   font-size: 24px;
   margin: 0;
   font-weight: 600;
-  color: var(--secondary-color);
+  color:blue;
 }
 
 .header .logo span {
@@ -473,6 +473,7 @@ section {
 
   .navmenu li {
     position: relative;
+    
   }
 
   .navmenu a,
@@ -1079,7 +1080,6 @@ section {
 /* Clients Section - Home Page
 ------------------------------*/
 .clients {
-  background-color: #d5d0d0;
   padding: 10px 0;
 }
 
@@ -1949,8 +1949,9 @@ section {
 /* Testimonials Section - Home Page
 ------------------------------*/
 .testimonials {
-  background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-abstract-background-with-futuristic-style-use-business-cover-banner_7505-1820.jpg");
+  background: #f4f4f4;
  
+  
 }
 
 .testimonials .info h3 {
@@ -2525,11 +2526,16 @@ section {
 /* Blog Section - Blog Page
 ------------------------------*/
 .blog .posts-list article {
-  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
+  
   padding: 30px;
   height: 100%;
-  border-radius: 10px;
+  cursor: pointer;
   overflow: hidden;
+  transition: 0.5s;
+}
+
+.blog .posts-list article:hover {
+  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
 }
 
 .blog .posts-list .post-img {
@@ -2539,13 +2545,13 @@ section {
 }
 
 .blog .posts-list .post-category {
-  font-size: 16px;
-  color: rgba(var(--default-color-rgb), 0.6);
+  font-size: 10px;
+  color: rgb(8, 8, 76);
   margin-bottom: 10px;
 }
 
 .blog .posts-list .title {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 700;
   padding: 0;
   margin: 0 0 20px 0;
@@ -2557,7 +2563,7 @@ section {
 }
 
 .blog .posts-list .title a:hover {
-  color: var(--primary-color);
+  color: rgb(8, 8, 76);
 }
 
 .blog .posts-list .post-author-img {
