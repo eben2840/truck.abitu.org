@@ -864,6 +864,7 @@ section {
 .footer {
   --background-color: #f4f4f4;
   color: #ffffff;
+  
   background-color: rgb(8, 8, 76);;
   font-size: 14px;
   padding-bottom: 50px;
@@ -1967,18 +1968,16 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  background-color: #fff;
+  /* background-color: #fff; */
   min-height: 150px;
   position: relative;
   margin: 30px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100%;
+  width: 400px;
   height: 300px;
-  
-  object-fit: cover;
- 
+  object-fit:cover;
   margin-right: 10px;
 }
 
