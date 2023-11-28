@@ -505,6 +505,7 @@ section {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-weight: bold;
   }
 
   .navmenu .dropdown ul {

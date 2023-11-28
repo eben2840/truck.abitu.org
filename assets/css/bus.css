@@ -2525,12 +2525,14 @@ section {
 /* Blog Section - Blog Page
 ------------------------------*/
 .blog .posts-list article {
-  
-  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
+
   padding: 30px;
   height: 100%;
-  border-radius: 10px;
   overflow: hidden;
+}
+
+.blog .posts-list article:hover {
+  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
 }
 
 .blog .posts-list .post-img {
@@ -2540,7 +2542,7 @@ section {
 }
 
 .blog .posts-list .post-category {
-  font-size: 16px;
+  font-size: 10px;
   color: rgba(var(--default-color-rgb), 0.6);
   margin-bottom: 10px;
 }
@@ -2557,9 +2559,7 @@ section {
   transition: 0.3s;
 }
 
-.blog .posts-list .title a:hover {
-  color: var(--primary-color);
-}
+
 
 .blog .posts-list .post-author-img {
   width: 50px;

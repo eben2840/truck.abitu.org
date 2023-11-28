@@ -36,7 +36,7 @@
   --nav-color: #3a3939;
   --nav-hover-color: rgb(8, 8, 76);;
   --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: rgb(8, 8, 76);;
+  --nav-dropdown-hover-color: rgb(1, 1, 11);;
   --nav-dropdown-background-color: #ffffff;
   --nav-mobile-background-color: #ffffff;
 }
@@ -481,9 +481,11 @@ section {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
+    color: rgb(8, 8, 76);
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
+    font-weight: 800px;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
@@ -505,7 +507,8 @@ section {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: rgb(8, 8, 76);
+    font-weight:bold;
   }
 
   .navmenu .dropdown ul {
@@ -542,6 +545,7 @@ section {
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
+    font-weight: 800px;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -558,6 +562,7 @@ section {
 
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
+    font-weight: 800px;
     top: 0;
     left: -100%;
     visibility: visible;
@@ -593,6 +598,7 @@ section {
   .navmenu .megamenu ul li:hover>a {
     padding: 10px 20px;
     font-size: 15px;
+    font-weight: 800px;
     color: var(--nav-dropdown-color);
   }
 
@@ -600,6 +606,7 @@ section {
   .navmenu .megamenu ul li .active,
   .navmenu .megamenu ul li .active:hover {
     color: var(--nav-dropdown-hover-color);
+    font-weight: 800px;
   }
 
   .navmenu .megamenu:hover>ul {
