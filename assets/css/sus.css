@@ -158,7 +158,6 @@ section {
 .page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
-  font-weight: 800px;
   padding-right: 10px;
   color: rgba(var(--default-color-rgb), 0.3);
 }
@@ -506,7 +505,6 @@ section {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
-    font-weight: bold;
   }
 
   .navmenu .dropdown ul {
@@ -543,7 +541,6 @@ section {
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
-    font-weight: 800px;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -596,14 +593,12 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
-    font-weight: 800px;
   }
 
   .navmenu .megamenu ul li a:hover,
   .navmenu .megamenu ul li .active,
   .navmenu .megamenu ul li .active:hover {
     color: var(--nav-dropdown-hover-color);
-    font-weight: 800px;
   }
 
   .navmenu .megamenu:hover>ul {
@@ -1982,7 +1977,7 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 400px;
+  width: 100%;
   height: 300px;
   object-fit:cover;
 }
@@ -2069,7 +2064,7 @@ section {
 }
 
 .recent-posts .post-category {
-  font-size: 16px;
+  font-size: 7px;
   color: rgba(var(--default-color-rgb), 0.5);
   margin-bottom: 10px;
 }
@@ -2529,12 +2524,19 @@ section {
 --------------------------------------------------------------*/
 /* Blog Section - Blog Page
 ------------------------------*/
+.blog{
+  background-color: #e1e4e4;
+}
 .blog .posts-list article {
-  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
+  background-color: #fff;
   padding: 30px;
   height: 100%;
-  border-radius: 10px;
   overflow: hidden;
+}
+.blog .posts-list article:hover {
+  background-color: #fff;
+  transition: 0.2;
+  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
 }
 
 .blog .posts-list .post-img {
@@ -2544,7 +2546,7 @@ section {
 }
 
 .blog .posts-list .post-category {
-  font-size: 16px;
+  font-size: 10px;
   color: rgba(var(--default-color-rgb), 0.6);
   margin-bottom: 10px;
 }
@@ -2562,7 +2564,7 @@ section {
 }
 
 .blog .posts-list .title a:hover {
-  color: var(--primary-color);
+ 
 }
 
 .blog .posts-list .post-author-img {
